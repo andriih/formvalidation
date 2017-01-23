@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form action="#" name="myForm" id="myForm" class="myForm">
+		<p>
+			<label for="fname">First cName</label>
+			<input type="text" id="fname" placeholder="Enter name">
+			<span id="fname__err" hidden></span>
+		</p>
+		<p>
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" placeholder="Enter last name">
+			<br />
+			<span id="lname__err" hidden></span>
+		</p>
+		<p>
+			<label for="prog">Are you programmer?</label>
+			<select name="prog" id="prog">
+				<option value="select" selected>select</option>
+				<option value="y">yes</option>
+				<option value="n">no</option>
+			</select>
+			<span id="prog__err" hidden></span>
+		</p>
+		<p id="lang__hidden" hidden>
+			<label for="lang">Choose your language.</label>
+			<select name="lang" id="lang">
+				<option value="select" selected>select</option>
+				<option value="c++">c++</option>
+				<option value="java">Java</option>
+				<option value="js">Javascript</option>
+			</select>
+			<span id="lang__err" hidden></span>
+		</p>
+		<p>
+			<button type="submit" id="submit" class="sbmt">Submit</button>
+		</p>
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>
