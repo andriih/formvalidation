@@ -1,9 +1,8 @@
 var form = document.forms.myForm,
-    fname = form.mail,
     mail = form.mail,
     login = form.sbmt,
-    mail__err = form.mail__err,
-	pass = form.pass;
+    mail__err = document.getElementById("mail__err"),
+	pass = form.pass,
     pass__err = form.pass__err,
     log_nav = document.querySelector(".login"),
     reg_nav = document.querySelector(".reg"),
@@ -25,10 +24,17 @@ form.addEventListener("submit",function(e){
 
     this.valueMail = mail.value.trim();
     this.valuePass = pass.value.trim();
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+    if(!re.test(this.valueMail)){
+    	mail__err.innerHTML = "Incorrect email format";
 
-
-    if(this.valueMail.length <= 3){
-    	mail__err.innerHTML = "E";
+	}else{
+        mail__err.innerHTML = "";
     }
+
+	if(this.valuePass.length<=7){
+
+	}
+
 });
