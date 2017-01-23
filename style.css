@@ -1,34 +1,48 @@
-*{
-	margin: 0px;
-	padding: 0px;
+body{
+	background-color: grey;
+	width: 1200px;
+	margin: 0;
+	padding:0;
 	box-sizing: border-box;
 }
-body{
-	width: 1200px;
-}
 .myForm{
-	margin-top: 100px;
-	width: 300px;
+	width: 150px;
+	height: 150px;
+	background-color: white;
 	display: block;
-	border:1px solid black;
-	border-radius: 5px ;
 	padding: 20px;
 	margin: 0 auto;
+	margin-top: 200px;
 }
-p{
-	padding: 5px;
-}
-.sbmt{
-	display: block;
-	margin: 0 auto;
-}
-input,select{
-	float: right;
 
+.login,.reg{
+	text-decoration: none;
+	color: azure;
+	display: inline-block;
+	margin: 10px;
 }
-span{
-color:red;
+
+label{
+	font-size: 10px;
+	font-weight: 600;
+	color: lightslategrey;
 }
-input:hover,select:hover,#submit:hover{
-	box-shadow: 0px 0px 7px 1px rgba(101,147,168,1);
+.bx_label{
+	font-size: 10px;
+	color: lightslategrey;
+	float: left;
+}
+button{
+	background-color: aqua;
+	float: right;
+}
+
+.myForm2{
+	display: none;
+	width: 150px;
+	height: 300px;
+	background-color: white;
+	padding: 20px;
+	margin: 0 auto;
+	margin-top: 200px;
 }
